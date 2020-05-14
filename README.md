@@ -1,6 +1,6 @@
-[![npm version](https://badge.fury.io/js/react-native-twitter-signin.svg)](https://badge.fury.io/js/react-native-twitter-signin)
+[![npm version](https://badge.fury.io/js/%40hackinggate%2Freact-native-twitter-signin.png)](https://badge.fury.io/js/%40hackinggate%2Freact-native-twitter-signin)
 
-Note: this guide is for TwitterKit 3.3 and ReactNative 0.56+.
+Note: this guide is for [TwitterKit5](https://github.com/touren/twitter-kit-ios) and ReactNative 0.56+.
 
 # React Native : Twitter Signin
 This package provides necessary code to get your social sign in using Twitter works with least pain possible.
@@ -29,11 +29,11 @@ From Twitter Kit 3.3, Fabric is no longer required.
 
 Firstly, install the npm package:
 
-    npm install react-native-twitter-signin --save
+    npm install @hackinggate/react-native-twitter-signin --save
 
 ### iOS
 
- - Link RNTwitterSignIn.xcodeproj by running `react-native link react-native-twitter-signin`
+ - Link RNTwitterSignIn.xcodeproj by running `react-native link @hackinggate/react-native-twitter-signin`
  - Configure Info.Plist like below, replace `<consumerKey>` with your own key:
 
 ```
@@ -64,19 +64,19 @@ Firstly, install the npm package:
 
  #### With CocoaPods
 
- - Add TwitterKit to your `Podfile`
+ - Add TwitterKit5 to your `Podfile`
  ```
  // Podfile
  target 'MyApp' do
    # use_frameworks!
-   pod 'TwitterKit', '~> 3.3.0'
+   pod 'TwitterKit5'
  end
  ```
  - Run `pod install`
 
  #### Manually
 
- - Download TwitterKit 3.3 from here https://ton.twimg.com/syndication/twitterkit/ios/3.3.0/Twitter-Kit-iOS.zip
+ - Download TwitterKit5 from here https://github.com/touren/twitter-kit-ios/releases
  - Add TwitterKit, TwitterCore and 2 other bundle files into your root folder in Xcode
  - In `Build Phases → Link Binary with libraries` add `Twitter.framework` and `LibRBTwitterSignin.a`
 
